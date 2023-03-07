@@ -1,0 +1,11 @@
+<div class="todo">
+  
+  <div *ngIf="todo?.done==true" class="round-done" (click)="updateDone(todo)"></div>
+  
+  <div *ngIf="todo?.done==false" class="round-not" (click)="updateDone(todo)"> </div>
+ 
+  <a [href]="'todos/' + todo?.id"> {{ todo?.name }} </a>
+  
+  <p>task n°{{ todo?.id }}</p>
+ 
+  </div>

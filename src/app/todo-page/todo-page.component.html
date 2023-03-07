@@ -1,0 +1,29 @@
+<div class="wrap-page">
+
+
+
+<div class="todo-page">
+
+
+<p>{{todo?.name}}, task n°{{todo?.id}}</p>
+
+<div class="status">
+    Status :
+    <div *ngIf="todo?.done==true" class="round-done"></div>
+    <div *ngIf="todo?.done==false" class="round-not"> </div>
+</div>
+
+<div class="btn">
+
+
+<button (click)="onDelete()" style="background-color: rgb(247, 34, 34);">Delete</button>
+<button (click)="showInput()">Update</button>
+</div>
+<div class="change" *ngIf="toUpdate==true">
+    <input type="text" [(ngModel)]="updatedName">
+    <button (click)="updateTodo()">
+        submit
+    </button>
+</div>
+</div>
+</div>

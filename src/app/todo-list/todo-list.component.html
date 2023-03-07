@@ -1,0 +1,13 @@
+<div class="wrap-list">
+<h1>Is there anything left to do?</h1>
+
+
+<div class="list"> 
+ <div *ngFor="let todo of todos">
+    <app-todo [todo]="todo"></app-todo>
+
+    <!-- <app-todo  (delete)="onDelete($event)" (update)="onUpdate($event)"></app-todo> -->
+</div>
+<app-todo-create></app-todo-create>
+</div>
+</div>

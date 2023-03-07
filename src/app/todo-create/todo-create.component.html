@@ -1,0 +1,19 @@
+
+
+<div class="todo" *ngFor="let todo of todos">
+    <div *ngIf="todo?.done==true" class="round-done"></div>
+    
+    <div *ngIf="todo?.done==false" class="round-not"> </div>
+   
+    <a [href]="'todos/' + todo?.id"> {{ todo?.name }} </a>
+    
+    <p>task n°{{ todo?.id }}</p>
+   
+    </div>
+
+<div class="create">
+    <input type="text" [(ngModel)]="newTodo">
+    <button (click)="createTodo()">
+        Create task
+    </button>
+</div>

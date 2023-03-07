@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+.wrap-page{
+display: flex;
+justify-content: center;
+place-items: center;
+font-family: 'IBM Plex Sans', sans-serif;
+
+
+
+.status{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+.round-not{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.rond-done{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(174, 255, 0);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.todo-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 5rem;
+    width: 30vw;
+    height: 30vw;
+
+    .btn{
+        button{
+            padding: 0.8rem;
+            background-color: rgb(245, 242, 71);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.261);
+            margin: 1rem;
+            
+        }
+    }
+
+    .change{
+        input{
+            padding: 0.8rem;
+            border-radius: 10px;
+        }
+        button{
+            padding: 0.8rem;
+            background-color: rgb(28, 28, 28);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.261);
+            margin: 1rem;
+            color: white;
+        }
+    }
+   
+    
+}
+}

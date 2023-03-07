@@ -1,0 +1,60 @@
+
+.todo{
+    display: flex;
+    justify-content: flex-start;
+    place-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    .round-not{
+        width: 20px;
+        height: 20px;
+        background-color: orange;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    .rond-done{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(174, 255, 0);
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    a{
+        color: black;
+        // text-decoration: underline solid 1px rgba(0, 0, 0, 0.243);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.187);
+        margin: 1rem;
+        padding-bottom: 1px
+        
+        
+    }
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
+    place-items: center;
+    input{
+        border-radius: 10px;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    button{
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        margin-left: 1rem;
+        border-radius: 20px;
+        width: 50%;
+    }
+}
